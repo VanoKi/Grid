@@ -173,6 +173,10 @@ footer a {
     text-decoration: underline;
 }
 
+.app-grid-container{
+    display: grid;
+}
+
 /* ------------------------------------------ */
 
 
