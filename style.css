@@ -177,7 +177,8 @@ footer a {
     text-decoration: underline;
 }
 
-.app-grid-container{
+.app-grid-container {
+    height: 100vh;
     display: grid;
     grid-template-rows: 80px 1fr 80px;
     grid-template-columns: 300px 1fr;
@@ -185,6 +186,13 @@ footer a {
         'side header'
         'side content'
         'side footer';
+}
+
+.options {
+    display: grid;
+    grid-template-rows: repeat(4, 80px);
+    grid-template-columns: repeat(2, 80px);
+    gap: 30px;
 }
 
 /* ------------------------------------------ */
