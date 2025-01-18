@@ -1,0 +1,219 @@
+/* Variables */
+
+:root {
+    --bg-primary: #1D293A;
+    --bg-primary-darker: #151e2b;
+    --bg-primary-dark: #0f1722;
+    --text-color: #fff;
+    --accent-primary: #6d63ff;
+    --accent-secondary: #ffa171;
+    --bg-primary-lighter: #354357;
+}
+
+/* ------------------------------------------ */
+
+/* Common styles */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    font-family: 'Montserrat', sans-serif;
+    color: var(--text-color);
+    font-weight: 500;
+    line-height: 1;
+    font-size: 100%;
+}
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+a,
+button {
+    color: var(--text-color);
+    background-color: transparent;
+}
+
+button {
+    border: none;
+    font-family: 'Montserrat', sans-serif;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+header,
+main,
+footer {
+    background-color: var(--bg-primary);
+}
+
+main {
+    padding: 20px 15px;
+}
+
+/* ------------------------------------------ */
+
+/* Header styles */
+
+header {
+    border-bottom: 1px solid var(--bg-primary-lighter);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 70px 0;
+}
+
+.header__menu {
+    display: flex;
+    gap: 50px;
+}
+
+.burger-button {
+    display: none;
+}
+
+.header__menu-link {
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+.header__menu-link:hover,
+.header__menu-link_active {
+    color: var(--accent-primary);
+}
+
+/* ------------------------------------------ */
+
+/* Sidebar styles */
+
+aside {
+    background-color: var(--bg-primary-dark);
+    padding: 65px 50px;
+}
+
+.options-heading {
+    margin-bottom: 100px;
+}
+
+.title {
+    font-weight: 500;
+    font-size: 2rem;
+    line-height: 0.7;
+}
+
+.arrow-button {
+    display: none;
+}
+
+.text {
+    font-size: 0.9rem;
+    line-height: 1.7;
+    display: inline-block;
+    margin-bottom: 30px;
+}
+
+.options__button {
+    background-color: var(--bg-primary-darker);
+    font-size: 1.5rem;
+}
+
+.options__button_active,
+.options__button:hover {
+    background-color: var(--accent-primary);
+}
+
+/* ------------------------------------------ */
+
+/* Calculator styles */
+
+.calculator__display {
+    background-color: var(--bg-primary-darker);
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 0 20px;
+    font-size: 4.25rem;
+}
+
+.calculator__button {
+    background-color: var(--bg-primary-lighter);
+    font-weight: 700;
+    font-size: 2rem;
+}
+
+.calculator__button-operation {
+    background-color: var(--accent-primary);
+}
+
+.calculator__button-operation_equals {
+    background-color: var(--accent-secondary);
+}
+
+/* ------------------------------------------ */
+
+/* Footer styles */
+
+footer {
+    border-top: 1px solid var(--bg-primary-lighter);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+footer a {
+    text-decoration: underline;
+}
+
+/* ------------------------------------------ */
+
+
+/* Adaptive tablet | mobile */
+
+@media screen and (max-width: 920px) {
+    header {
+        padding: 0 15px 0;
+    }
+
+    .header__menu {
+        display: none;
+    }
+
+    .burger-button {
+        display: block;
+    }
+
+    aside {
+        padding: 20px 15px;
+    }
+
+    .options-heading {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 20px;
+    }
+
+    .title {
+        font-size: 1.5rem;
+    }
+
+    .arrow-button {
+        display: inline-block;
+    }
+
+    .text {
+        font-size: 0.75rem;
+        margin-bottom: 15px;
+    }
+}
+
+/* ------------------------------------------ */
