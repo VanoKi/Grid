@@ -59,6 +59,7 @@ footer {
 
 main {
     padding: 20px 15px;
+    grid-area: content;
 }
 
 /* ------------------------------------------ */
@@ -71,6 +72,7 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 0 70px 0;
+    grid-area: header;
 }
 
 .header__menu {
@@ -99,6 +101,7 @@ header {
 aside {
     background-color: var(--bg-primary-dark);
     padding: 65px 50px;
+    grid-area: side;
 }
 
 .options-heading {
@@ -168,6 +171,7 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
+    grid-area: footer;
 }
 footer a {
     text-decoration: underline;
@@ -177,6 +181,10 @@ footer a {
     display: grid;
     grid-template-rows: 80px 1fr 80px;
     grid-template-columns: 300px 1fr;
+    grid-template-areas:
+        'side header'
+        'side content'
+        'side footer';
 }
 
 /* ------------------------------------------ */
